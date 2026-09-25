@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+         the Cafe
+    </title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">The Cafe</h1> 
 
+        <h1 style="color: aquamarine;">the caffecino</h1>
+        <p>welcome to our cafe the caffaccino .thnx for trusting us and enjoy you cofee with you love ones</p>
+        <h2 style="color: blueviolet;">STARTER</h2>  
+        <button style="background-color: yellow;">MAIN COURSE</button>       
+        <button style="color: blueviolet;">STARTER</button>     
+        <h1>STARTER</h1>
+        <h2>Bang Bang Chicken prawn></h2>
+        <h2>Fried Mozarella Sticks</h2>
+        <h2 style="color: blueviolet;"> Battered prawns w/Ginger-soy sauce</h2>
+        <h1>Shakes</h1>
+        <ul>
+            <li>Banana Shakes</li>
+            <li>Mango Shakes</li>
+            <li>Strawberry Shakes</li>
+            <li>Pine-Apple Shakes</li>
+        </ul>
+        <h1 style="color: blueviolet;">TEA AND COFFEE</h1>
+       
+        <ul>
+            <li>
+                Black Tea
+            </li>
+            <li>Adrak Chai</li>
+            <li>Elaichi Chai</li>
+            <li>Masala Chai</li>
+            <li>Strong Hot Coffee</li>
+            <li>Black Coffee</li>
+            <li>Strong Hot Coffee</li>
+            <li>Caramel Hot Coffee</li>
+        </ul>
+        <h1>Water and Soft DRinks</h1>
+        <table border="1">
+            <tr>
+                <th>Soda ,Soda YUZU</th>
+                <td>400Rs</td>
+            </tr>
+            <tr>
+                <th>lipton ice tea <br>Lemon or peach</th>
+                <td>400rs</td>
+            </tr>
+            <tr>
+                <th>Still Water</th>
+                <td>50 rs</td>
+            </tr>
+        </table>
+        <hr>for lining
+        <abbr title="CF">THE CAFE</abbr>
+        <code>extra icecream scoop   50 extra</code><br>
+        <cite>nutella  -50rs</cite><br>
+        <address>alamdar road quetta</adress>
+        <article><h1>AI Mode conversation: article about cafe'article about cafe'Beyond the Brew: How the Café Became the Ultimate "Third Place"</h1>
+        <p>AI Mode conversation: article about cafe'article about cafe'Beyond the Brew: How the Café Became the Ultimate "Third Place"</p></article>
+<img src= "cafe.jpg" alt="this is a pic of coffee">
+<hr>
+
+        
+
+    </body>
+</html>
