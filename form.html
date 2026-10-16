@@ -4,6 +4,7 @@
         <title>
             Bibi Rabia Haidari
         </title>
+        <script></script>
     </head>
     <body>
         <style>
@@ -16,7 +17,13 @@
             body
             {background: radial-gradient(circle, red,yellow)}
             /* circle wala color */
-            
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+            ul {
+                list-style:square;
+            }
         </style>
         
         
@@ -31,6 +38,7 @@
         <p>
             Welcome to my website.I am passionate about learning new things,creating beautiful websites and making positive impact in the world.
         </p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 234.5C512 217.5 505.3 201.2 493.3 189.2L386.7 82.7C374.7 70.7 358.5 64 341.5 64L192 64zM453.5 240L360 240C346.7 240 336 229.3 336 216L336 122.5L453.5 240z"/></svg>
         <button style="background-color: rgb(172, 22, 172);">About Me</button>
         <button style="color: rgb(172, 22, 172);">My journey</button>
         
@@ -101,21 +109,6 @@
          <pre>Balochistan</pre>
          <h1 style="color: blue;text-align: center;">Balochistan
          </h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
          <form>
             <label for="email">email</label>
             <input type="email" name="email" id="email" required>
@@ -141,11 +134,11 @@
             <br>
             <br>
             <label for="phone no">Phone No</label>
-            <input type="mumber" name="number"id=number placeholder="enter your phone number" required>
+            <input type="tel" name="number"id=number placeholder="enter your phone number" required>
             <br>
             <br>
-            <label for="Date Of Birth">Date Of Birth</label>
-            <input type="date " name="date of birth" id="date of birth" placeholder="dd/MM/yyyy" required>
+            <label for="DOB">Date Of Birth</label>
+            <input type="date" name="date of birth" id="date of birth" placeholder="dd/MM/yyyy" required>
             <br>
             <br>
             <label for="country">Country</label>
@@ -164,7 +157,28 @@
             <input type="radio" name="gender" id="Female" value="female">
             <label for="Female">Female</label>
             <br>
-            <button type="submit" style="background-color: blue; color: white;">Submit</button>
+            <button type="submit" style="background-color: #30306e; color: white;">Submit</button>
+            <p>skills</p>
+            <br>
+            <br>
+            <input type="checkbox" name="skills" id="book reading" value="book reading">
+            <label for="book reading">book reading</label>
+            <input type="checkbox" name="skills" id="coding" value="coding">
+            <label for="coding">coding</label>
+            <br>
+            <br>
+            <label for="your_feedback">your feedback</label>
+            <textarea name="your_feedback" id="your_feedback" cols="30" rows="4" placeholder="give your feedback.........."></textarea>
+            <label for="photo">photo</label>
+            <input type="file" name="photo" id="photo" aceept="image/**">
+            <br>
+            <br>
+            <label for="skills">skills level</label>
+            <input type="range" name="skill" id="skill" min="1" max="10" value="0">
+            <label for="color">favorite color</label>
+            <input type="color" name="color" id="color" value="#30306e">
+            <input type="hidden" name="form version" value="1.0">
+            <!-- barai version ki new new change mshna -->
          </form>
 
 
