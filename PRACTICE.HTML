@@ -31,8 +31,10 @@
             <label for="dob">Date Of Birth</label>
             <input type="date" name="dob" id="dob" required>
             <br><br>
-            <label>Address</label>
-            <input type="address" name="address" id="address" cols="40" rows="4" placeholder="enter your address" required>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" rows="4 cols=40" placeholder="type your address">
+
+            </textarea>
             <br><br>
             <label for="city">City</label>
             <input type="city" name="city" id="city" max="20" placeholder="enter your city name" required>
@@ -55,8 +57,41 @@
                 <option value="in">India</option>
                 <option value="it">Italy</option>
                 <option value="jp">Japan</option>
+                <option value="nl">Netherlands</option>
+                <option value="nz">New Zealands</option>
+                <option value="se">Sweden</option>
+                <option value="pk">Pakistan</option>
+
             </select>
-            
+            <p>Hobbies</p>
+            <input type="checkbox" name="hobbies" id="drawing" value="drawing">
+            <label for="drawing">Drawing</label>
+            <input type="checkbox" name="hobbies" id="singing" value="singing">
+            <label for="singing">Singing</label>
+            <input type="checkbox" name="hobbies" id="dancing" value="dancing">
+            <label for="dancing">Dancing</label>
+            <input type="checkbox" name="hobbies" id="others" value="others">     
+            <label for="others">Others</label>
+            <input type="text" name="other" id="other" max="50" placeholder="type your hobbies">
+            <br><br>
+            <p>Qualifications</p>
+            <input type="checkbox" name="qualifications" id="high_school" value="high_school">
+            <label>High School(10th)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="higher_school" value="higher_school">
+            <label>High School(12th)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="graduations" value="graduations">
+            <label for="graduations">Graduations(Bachelors)</label>
+            <br>
+            <input type="checkbox" name="qualificatios" id="post_graduation" value="post_graduation">
+            <label for="post_graduation">Post Graduation(Masters)</label>
+            <br>
+            <br>
+            <button>Submit</button>
+            <button>Reset</button>
+
+
 
 
 
