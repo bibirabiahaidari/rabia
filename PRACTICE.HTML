@@ -6,7 +6,7 @@
         </title>
         <style>
             label{
-                width: 100px;
+                
                 display: inline-block;
             }
             input{
@@ -16,7 +16,33 @@
             form{
                 background-color: blueviolet;
                 color: aqua;
+                align-items: center;
             }
+            .form1{
+                justify-items: center;
+                align-items: center;
+                justify-content: center;
+
+            }
+            body{
+                justify-items: center;
+                align-items: center;
+                font-size: 30px;
+                background-color: blueviolet;
+            }
+            button{
+                font-size: 30px;
+                background-color: blue;
+            }
+            .heading{
+                text-align: center;
+                text-shadow: cadetblue;
+            }
+            input{
+                padding: 20px;
+                width: 100%;
+            }
+            
             
             
         
@@ -25,10 +51,11 @@
 
     </head>
     <body>
-        <h1>Rabia Mehboob Forms</h1>
+        <h1 class="heading1" >Rabia Mehboob Forms</h1>
         <p>Please Fill The Forms Correctly</p>
         <br>
         <br><br><br>
+        <div class="form1">
         <form action="submit" method="post">
             <label for="username">First Name</label>
             <input type="username" name="username" id="username" max="40"  placeholder="enter your first name" required>
@@ -65,9 +92,8 @@
             <label for="state">State</label>
             <input type="state" name="state" id="state" max="40" placeholder="enter your state name">
             <br><br>
-
             <label for="country">Country</label>
-            <select>country
+            <select class="option">country
                 <option value="">select your country</option>
                 <option value="au">Australia</option>
                 <option value="at">Austria</option>
@@ -139,8 +165,10 @@
             <label>MA(Master of Arts)</label>
             <br>
             <br>
+
             <button>Submit</button>
             <button>Reset</button>
+            </div>
 
 
 
