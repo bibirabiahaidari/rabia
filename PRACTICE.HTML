@@ -4,11 +4,31 @@
         <title>
             Contact us
         </title>
+        <style>
+            label{
+                width: 100px;
+                display: inline-block;
+            }
+            input{
+                margin-top: 10px;
+               border-color: brown;
+            }
+            form{
+                background-color: blueviolet;
+                color: aqua;
+            }
+            
+            
+        
+
+        </style>
 
     </head>
     <body>
-        <h1>Get in Touch</h1>
-        <p>We,d love to hear from you.send us a message</p>
+        <h1>Rabia Mehboob Forms</h1>
+        <p>Please Fill The Forms Correctly</p>
+        <br>
+        <br><br><br>
         <form action="submit" method="post">
             <label for="username">First Name</label>
             <input type="username" name="username" id="username" max="40"  placeholder="enter your first name" required>
@@ -45,6 +65,7 @@
             <label for="state">State</label>
             <input type="state" name="state" id="state" max="40" placeholder="enter your state name">
             <br><br>
+
             <label for="country">Country</label>
             <select>country
                 <option value="">select your country</option>
@@ -70,6 +91,8 @@
             <label for="singing">Singing</label>
             <input type="checkbox" name="hobbies" id="dancing" value="dancing">
             <label for="dancing">Dancing</label>
+            <input type="checkbox" name="hobbies" id="sketching" value="sketching">
+            <label for="sketching">Sketching</label>
             <input type="checkbox" name="hobbies" id="others" value="others">     
             <label for="others">Others</label>
             <input type="text" name="other" id="other" max="50" placeholder="type your hobbies">
@@ -86,6 +109,34 @@
             <br>
             <input type="checkbox" name="qualificatios" id="post_graduation" value="post_graduation">
             <label for="post_graduation">Post Graduation(Masters)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="phd" value="phd">
+            <label for="phd">Phd</label>
+            <br><br><br>
+            <p>Courses Applied For</p>
+            <input type="checkbox" name="qualifications" id="bca" value="bca">
+            <label>BCA(Bachelor of Computer Applications)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="b.com" value="b.com">
+            <label>B.COM(Bachelor of Commerce)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="b.sc" value="b.sc">
+            <label>B.SC(Bachelor of Science)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="ba" value="ba">
+            <label>BA(Bachelor of Arts)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="mca" value="mca">
+            <label>MCA(Master of Computer Applications)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="m.com" value="m.com">
+            <label>M.Com(Master of Commerce)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="m.sc" value="m.sc">
+            <label>M.SC(Master of Science)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="ma" value="ma">
+            <label>MA(Master of Arts)</label>
             <br>
             <br>
             <button>Submit</button>
