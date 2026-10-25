@@ -1,0 +1,239 @@
+</Doctype>
+<html>
+    <head>
+        <title>
+            Contact us
+        </title>
+        <style>
+            body{
+                font-family: sans-serif,segoe ui;
+                background: linear-gradient(rgb(128, 0, 98));
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                padding: 20px;
+            }
+            .h1{
+                background: pink;
+                padding: 40px;
+                border-radius: 45px;
+                box-shadow: 10px 30px palevioletred;
+                width: 60%;
+                max-width: 500px;
+            }
+            h1{
+                color: purple;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .p{
+                margin-bottom: 30px;
+                color: blueviolet;
+                text-align: center;
+            }
+            .form{
+                margin-bottom: 20px;
+            }
+            label{
+                display: block;
+                margin-bottom: 5px;
+                color: rgb(109, 50, 205);
+                font-weight: bold;
+            }
+            input[type="text"],
+            input[type="email"],
+            textarea,
+            select{
+                width: 100px;
+                padding: 12px;
+                border: 10px purple;
+                border-radius: 10px;
+                font-size: 14px;
+                transition: border-color red;
+            }
+            input:focus,
+            textarea:focus,
+            select:focus{
+                outline:none;
+                border-color: blueviolet;
+            }
+            textarea{
+                resize: vertical;
+                min-height: 100px;
+
+            }
+            .radio-group,
+            .checkbox-group{
+                display: flex;
+                gap: 5px;
+                flex-wrap: wrap;
+            }
+            .radio-group label,
+            .checkbox-group label{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                font-weight: normal;
+            }
+            .button{
+                align-items: center;
+                
+
+            }
+            
+            
+
+
+                                                   
+
+            
+            
+            
+        
+
+        </style>
+
+    </head>
+    <body>
+     <div class="h1">
+        <h1 >Rabia Mehboob Forms</h1>
+        <p class="p">Please Fill The Forms Correctly</p>
+        <br>
+        <br><br><br>
+        
+        <form action="submit" method="post">
+         <div class="form">
+            <label for="username">First Name</label>
+            <input type="username" name="username" id="username" max="40"  placeholder="enter your first name" required>
+         </div>
+            <br><br>
+            
+            <label for="lastname">Last Name</label>
+            <input type="username" name="username" id="username" max="40" placeholder="enter your last name" required>
+            <br><br>
+            <label for="email">Email ID</label>
+            <input type="email" name="email" id="email" placeholder="enter your email id" required>
+            <br><br>
+            <label for="phone">Mobile Number</label>
+            <input type="tell" name="mobilenum" id="mobilenum" max="11" placeholder="+923*********" required>
+          
+            <br><br>
+          <div class="radio-group">
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label>Female</label>
+          </div>
+            <br><br>
+            <label for="dob">Date Of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+            <br><br>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" rows="4 cols=40" placeholder="type your address">
+
+            </textarea>
+            <br><br>
+            <label for="city">City</label>
+            <input type="city" name="city" id="city" max="20" placeholder="enter your city name" required>
+            <br><br>
+            <label for="pincode">Pin Code</label>
+            <input type="number" name="pincode" id="pincode" max="6" placeholder="******" required>
+            <br><br>
+            <label for="state">State</label>
+            <input type="state" name="state" id="state" max="40" placeholder="enter your state name">
+            <br><br>
+            <label for="country">Country</label>
+            <select class="option">country
+                <option value="">select your country</option>
+                <option value="au">Australia</option>
+                <option value="at">Austria</option>
+                <option value="ca">Canada</option>
+                <option value="fi">Finland</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="in">India</option>
+                <option value="it">Italy</option>
+                <option value="jp">Japan</option>
+                <option value="nl">Netherlands</option>
+                <option value="nz">New Zealands</option>
+                <option value="se">Sweden</option>
+                <option value="pk">Pakistan</option>
+
+            </select>
+            <p>Hobbies</p>
+         <div class="checkbox-group"> 
+            <input type="checkbox" name="hobbies" id="drawing" value="drawing">
+            <label for="drawing">Drawing</label>
+            <input type="checkbox" name="hobbies" id="singing" value="singing">
+            <label for="singing">Singing</label>
+            <input type="checkbox" name="hobbies" id="dancing" value="dancing">
+            <label for="dancing">Dancing</label>
+            <input type="checkbox" name="hobbies" id="sketching" value="sketching">
+            <label for="sketching">Sketching</label>
+            <input type="checkbox" name="hobbies" id="others" value="others">     
+            <label for="others">Others</label>
+            <input type="text" name="other" id="other" max="50" placeholder="type your hobbies">
+            <br><br>
+            <p>Qualifications</p>
+            <input type="checkbox" name="qualifications" id="high_school" value="high_school">
+            <label>High School(10th)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="higher_school" value="higher_school">
+            <label>High School(12th)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="graduations" value="graduations">
+            <label for="graduations">Graduations(Bachelors)</label>
+            <br>
+            <input type="checkbox" name="qualificatios" id="post_graduation" value="post_graduation">
+            <label for="post_graduation">Post Graduation(Masters)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="phd" value="phd">
+            <label for="phd">Phd</label>
+            <br><br><br>
+            <p>Courses Applied For</p>
+            <input type="checkbox" name="qualifications" id="bca" value="bca">
+            <label>BCA(Bachelor of Computer Applications)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="b.com" value="b.com">
+            <label>B.COM(Bachelor of Commerce)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="b.sc" value="b.sc">
+            <label>B.SC(Bachelor of Science)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="ba" value="ba">
+            <label>BA(Bachelor of Arts)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="mca" value="mca">
+            <label>MCA(Master of Computer Applications)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="m.com" value="m.com">
+            <label>M.Com(Master of Commerce)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="m.sc" value="m.sc">
+            <label>M.SC(Master of Science)</label>
+            <br>
+            <input type="checkbox" name="qualifications" id="ma" value="ma">
+            <label>MA(Master of Arts)</label>
+         </div>
+            <br>
+            <br>
+          <div class="button">
+
+            <button>Submit</button>
+            <button>Reset</button>
+          </div>
+
+
+
+
+
+
+        </form>
+     </div> 
+
+    </body>
+
+
+</html>
