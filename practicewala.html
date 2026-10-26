@@ -8,7 +8,7 @@
             body{
                 font-family: sans-serif,segoe ui;
                 background: linear-gradient(rgb(128, 0, 98));
-                min-height: 100vh;
+                min-height: 250vh;
                 display: flex;
                 justify-content: center;
                 align-items: center; 
@@ -40,23 +40,29 @@
                 margin-bottom: 5px;
                 color: rgb(109, 50, 205);
                 font-weight: bold;
+                width: 95%;
             }
-            input[type="text"],
-            input[type="email"],
+            
             textarea,
             select{
-                width: 100px;
+                width: 100%;
                 padding: 12px;
                 border: 10px purple;
                 border-radius: 10px;
                 font-size: 14px;
                 transition: border-color red;
             }
+            input[type="text"],
+            input[type="email"],
             input:focus,
             textarea:focus,
             select:focus{
                 outline:none;
                 border-color: blueviolet;
+                
+            }
+            input{
+                
             }
             textarea{
                 resize: vertical;
@@ -82,8 +88,7 @@
 
             }
             
-            
-
+           
 
                                                    
 
@@ -103,10 +108,10 @@
         <br><br><br>
         
         <form action="submit" method="post">
-         <div class="form">
+        
             <label for="username">First Name</label>
             <input type="username" name="username" id="username" max="40"  placeholder="enter your first name" required>
-         </div>
+         
             <br><br>
             
             <label for="lastname">Last Name</label>
@@ -116,7 +121,7 @@
             <input type="email" name="email" id="email" placeholder="enter your email id" required>
             <br><br>
             <label for="phone">Mobile Number</label>
-            <input type="tell" name="mobilenum" id="mobilenum" max="11" placeholder="+923*********" required>
+            <input type="tel" name="mobilenum" id="mobilenum" max="11" placeholder="+923*********" required>
           
             <br><br>
           <div class="radio-group">
@@ -174,8 +179,8 @@
             <label for="sketching">Sketching</label>
             <input type="checkbox" name="hobbies" id="others" value="others">     
             <label for="others">Others</label>
-            <input type="text" name="other" id="other" max="50" placeholder="type your hobbies">
-            <br><br>
+            <input type="textarea" name="other" id="other" max="50" placeholder="type your hobbies">
+            <br><br><br><br>
             <p>Qualifications</p>
             <input type="checkbox" name="qualifications" id="high_school" value="high_school">
             <label>High School(10th)</label>
