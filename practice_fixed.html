@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact us</title>
+    <style>
+        * {
+            box-sizing: border-box;   /* padding no longer makes boxes wider than 100% */
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: rgb(128, 0, 98);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .container {
+            background: pink;
+            padding: 40px;
+            border-radius: 45px;
+            box-shadow: 10px 30px palevioletred;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            color: purple;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            margin-bottom: 30px;
+            color: blueviolet;
+            text-align: center;
+        }
+
+        /* one block per question = spacing, instead of many <br> */
+        .field {
+            margin-bottom: 20px;
+        }
+
+        label,
+        .group-title {
+            display: block;
+            margin-bottom: 5px;
+            color: rgb(109, 50, 205);
+            font-weight: bold;
+        }
+
+        /* text-like inputs, textarea and select share one style */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid purple;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: red;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        /* radios and checkboxes */
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .checkbox-list label {
+            font-weight: normal;
+        }
+
+        .radio-group label,
+        .checkbox-group label,
+        .checkbox-list label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: normal;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            background: purple;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rabia Mehboob Forms</h1>
+        <p class="subtitle">Please Fill The Forms Correctly</p>
+
+        <form action="submit" method="post">
+
+            <div class="field">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" maxlength="40" placeholder="enter your first name" required>
+            </div>
+
+            <div class="field">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" maxlength="40" placeholder="enter your last name" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email ID</label>
+                <input type="email" name="email" id="email" placeholder="enter your email id" required>
+            </div>
+
+            <div class="field">
+                <label for="mobilenum">Mobile Number</label>
+                <input type="tel" name="mobilenum" id="mobilenum" maxlength="13" placeholder="+923*********" required>
+            </div>
+
+            <div class="field">
+                <span class="group-title">Gender</span>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="dob">Date Of Birth</label>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+
+            <div class="field">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" rows="4" placeholder="type your address"></textarea>
+            </div>
+
+            <div class="field">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" maxlength="20" placeholder="enter your city name" required>
+            </div>
+
+            <div class="field">
+                <label for="pincode">Pin Code</label>
+                <input type="text" name="pincode" id="pincode" maxlength="6" placeholder="******" required>
+            </div>
+
+            <div class="field">
+                <label for="state">State</label>
+                <input type="text" name="state" id="state" maxlength="40" placeholder="enter your state name">
+            </div>
+
+            <div class="field">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="">select your country</option>
+                    <option value="au">Australia</option>
+                    <option value="at">Austria</option>
+                    <option value="ca">Canada</option>
+                    <option value="fi">Finland</option>
+                    <option value="fr">France</option>
+                    <option value="de">Germany</option>
+                    <option value="in">India</option>
+                    <option value="it">Italy</option>
+                    <option value="jp">Japan</option>
+                    <option value="nl">Netherlands</option>
+                    <option value="nz">New Zealand</option>
+                    <option value="se">Sweden</option>
+                    <option value="pk">Pakistan</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <span class="group-title">Hobbies</span>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="hobbies" value="drawing"> Drawing</label>
+                    <label><input type="checkbox" name="hobbies" value="singing"> Singing</label>
+                    <label><input type="checkbox" name="hobbies" value="dancing"> Dancing</label>
+                    <label><input type="checkbox" name="hobbies" value="sketching"> Sketching</label>
+                    <label><input type="checkbox" name="hobbies" value="others"> Others</label>
+                </div>
+                <br>
+                <input type="text" name="other" id="other" maxlength="50" placeholder="type your other hobbies">
+            </div>
+
+            <div class="field">
+                <span class="group-title">Qualifications</span>
+                <div class="checkbox-list">
+                    <label><input type="checkbox" name="qualifications" value="high_school"> High School (10th)</label>
+                    <label><input type="checkbox" name="qualifications" value="higher_school"> High School (12th)</label>
+                    <label><input type="checkbox" name="qualifications" value="graduation"> Graduation (Bachelors)</label>
+                    <label><input type="checkbox" name="qualifications" value="post_graduation"> Post Graduation (Masters)</label>
+                    <label><input type="checkbox" name="qualifications" value="phd"> PhD</label>
+                </div>
+            </div>
+
+            <div class="field">
+                <span class="group-title">Courses Applied For</span>
+                <div class="checkbox-list">
+                    <label><input type="checkbox" name="courses" value="bca"> BCA (Bachelor of Computer Applications)</label>
+                    <label><input type="checkbox" name="courses" value="bcom"> B.Com (Bachelor of Commerce)</label>
+                    <label><input type="checkbox" name="courses" value="bsc"> B.Sc (Bachelor of Science)</label>
+                    <label><input type="checkbox" name="courses" value="ba"> BA (Bachelor of Arts)</label>
+                    <label><input type="checkbox" name="courses" value="mca"> MCA (Master of Computer Applications)</label>
+                    <label><input type="checkbox" name="courses" value="mcom"> M.Com (Master of Commerce)</label>
+                    <label><input type="checkbox" name="courses" value="msc"> M.Sc (Master of Science)</label>
+                    <label><input type="checkbox" name="courses" value="ma"> MA (Master of Arts)</label>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
