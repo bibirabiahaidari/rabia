@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabia Haideri</title>
+    <style>
+        
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: white;
+    padding: 10px 4%;
+    border-top: 4px solid #663399;
+    box-shadow: 0 2px 8px #dddddd;    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #663399;
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #663399;
+}
+
+section {
+    padding: 25px 6%;
+    scroll-margin-top: 20px;
+}
+
+#home {
+    background-color: #fff5fb;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#home h3 {
+    color: #663399;
+    font-family: Georgia, serif;
+}
+
+#home h1 {
+    color: #663399;
+    font-family: Georgia, serif;
+    font-size: 55px;
+    margin: 0;
+}
+
+#home p {
+    max-width: 500px;
+}
+
+button {
+    background-color: #663399;
+    color: white;
+    border: 1px solid #663399;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 8px 8px 8px 0;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #8e44ad;
+}
+
+h2 {
+    color: #663399;
+    font-family: Georgia, serif;
+}
+
+#about {
+    background-color: white;
+}
+
+#about p {
+    max-width: 750px;
+}
+
+blockquote {
+    background-color: #fff0f8;
+    color: #a83280;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin-left: auto;
+    position: relative; 
+    margin-top: -120px;
+    margin-left: auto;
+    margin-right: 30px;
+    width: 218px;
+
+
+}
+.daily-life {
+    padding: 20px 25px;
+    text-align: center;
+    background: #fff;
+}
+
+.daily-life h2 {
+    color: #633080;
+    font-family: Georgia, serif;
+    margin-bottom: 25px;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    gap: 10px;
+}
+
+.day-item {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.day-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    margin: 0 auto 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.sun { background: #ffdf70; }
+.book { background: #b9e8b8; }
+.computer { background: #8bd7f5; }
+.food { background: #f3a8d0; }
+.music { background: #83d7d0; }
+.night { background: #56358c; color: white; }
+
+.day-item h4 {
+    font-size: 13px;
+    margin: 8px 0;
+    color: #222;
+}
+
+.day-item p {
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 0;
+    color: #333;
+}
+
+
+#education,
+#skills,
+#hobbies,
+#goals {
+    display: inline-block;
+    vertical-align: top;
+    width: 21%;
+    min-width: 200px;
+    margin: 1px 0;
+    padding: 15px;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+}
+
+#education {
+    background-color: #f6f0fc;
+}
+
+#skills {
+    background-color: #f0f8f1;
+}
+
+#hobbies {
+    background-color: #fff6eb;
+}
+
+#goals {
+    background-color: #f0f5ff;
+}
+
+section ul {
+    padding-left: 22px;
+}
+
+#daily-life li {
+    margin-bottom: 15px;
+}
+
+#favorites table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 650px;
+}
+
+#favorites th,
+#favorites td {
+    border: 1px solid #e7c9dc;
+    padding: 10px;
+    text-align: left;
+}
+
+#favorites th {
+    background-color: #fbeaf4;
+    color: #a83280;
+}
+
+#certificate p {
+    background-color: #f6f0fc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#contact {
+    background-color: #fffafd;
+}
+
+address {
+    font-style: normal;
+}
+
+a {
+    color: #663399;
+}
+
+footer {
+    background-color: #663399;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    header {
+        display: block;
+    }
+
+    nav ul {
+        gap: 12px;
+        margin-top: 12px;
+    }
+
+    #education,
+    #skills,
+    #hobbies,
+    #goals {
+        display: block;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    #home h1 {
+        font-size: 42px;
+    }
+}
+</style>
+    </style>
+</head>
+<body>
+
+    <!-- Home -->
+    <header>
+        <h1>I am Rabia &#10048;</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h3>Hello, I'm</h3>
+            <h1>Rabia &#9825;</h1>
+            <h3>A Student | Learner | Dreamer</h3>
+
+            <p>
+                Welcome to my personal webpage. I'm passionate about
+                learning new things, creating beautiful websites
+                and making a positive impact in the world.
+            </p>
+
+            <button><a href="#about">About Me</a></button>
+            <button><a href="#journey">My Journey</a></button>
+        </section>
+
+        <!-- About Me -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                My name is Rabia. I am a student and I live in Pakistan.
+                I am passionate about learning new things and improving
+                my skills. I am currently learning Web Development.
+                I enjoy creating simple and beautiful websites.
+                I am a hard-working, dedicated and positive person.
+                I believe in myself and always try to do my best
+                in everything I do.
+            </p>
+
+            
+            <blockquote>
+                <strong>
+                 "The best way to predict your future is to create it."&#9825;
+                </strong>
+            </blockquote>
+        </section>
+
+        <!-- My Journey -->
+        <section id="journey">
+            <h2>My Journey</h2>
+            <p>
+                I am learning new skills and working towards my dream
+                of becoming a successful Web Developer.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Matric</li>
+                <li>Intermediate (Pre-Engineering)</li>
+                <li>Currently learning Web Development</li>
+            </ul>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Basic JavaScript</li>
+                <li>Microsoft Word</li>
+                <li>PowerPoint</li>
+            </ul>
+        </section>
+
+        <!-- Hobbies -->
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Reading books</li>
+                <li>Coding</li>
+                <li>Listening to music</li>
+                <li>Drawing</li>
+                <li>Learning new things</li>
+            </ul>
+        </section>
+
+        <!-- Goals -->
+        <section id="goals">
+            <h2>Goals</h2>
+            <ul>
+                <li>Become a good Web Developer</li>
+                <li>Help my family</li>
+                <li>Travel the world</li>
+                <li>Make my parents proud</li>
+            </ul>
+        </section>
+
+        <!-- A Day in My Life -->
+        <section id="daily-life">
+           
+    <h2>◷ A Day in My Life</h2>
+
+    <div class="timeline">
+
+        <div class="day-item">
+            <div class="day-icon sun">☀</div>
+            <h4>6:00 AM</h4>
+            <p>Wake up and<br>morning prayer</p>
+        </div>
+
+        <div class="day-item">
+            <div class="day-icon book">📖</div>
+            <h4>7:00 AM</h4>
+            <p>Study and<br>read books</p>
+        </div>
+
+        <div class="day-item">
+            <div class="day-icon computer">🖥</div>
+            <h4>10:00 AM</h4>
+            <p>Practice coding<br>and web development</p>
+        </div>
+
+        <div class="day-item">
+            <div class="day-icon food">🍴</div>
+            <h4>1:00 PM</h4>
+            <p>Lunch and<br>family time</p>
+        </div>
+
+        <div class="day-item">
+            <div class="day-icon music">♫</div>
+            <h4>5:00 PM</h4>
+            <p>Listen to music<br>and relaxation</p>
+        </div>
+
+        <div class="day-item">
+            <div class="day-icon night">☾</div>
+            <h4>10:00 PM</h4>
+            <p>Revise the day<br>and sleep</p>
+        </div>
+
+    </div>
+
+        </section>
+        
+        <!-- My Favorites -->
+        <section id="favorites">
+            <h2>My Favorites</h2>
+            
+
+            <table border="1">
+                <tr>
+                    <th>Favorite</th>
+                    <th>My Choice</th>
+                </tr>
+                <tr>
+                    <td>Favorite Color</td>
+                    <td>Purple</td>
+                </tr>
+                <tr>
+                    <td>Favorite Book</td>
+                    <td>"Atomic Habits" by James Clear</td>
+                </tr>
+                <tr>
+                    <td>Favorite Food</td>
+                    <td>Pizza, Pasta, Biryani</td>
+                </tr>
+                <tr>
+                    <td>Favorite Place</td>
+                    <td>Mountains</td>
+                </tr>
+                <tr>
+                    <td>Favorite Subject</td>
+                    <td>urdu</td>
+                </tr>
+                <tr>
+                    <td>Dream</td>
+                    <td>To become a successful Web Developer</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Certificate -->
+        <section id="certificate">
+            <h2>My Form</h2>
+            <p>My form will be added here.</p>
+            <a href="fixed.html">my form</a>
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                <strong>&#9993;Email:</strong>
+                <a >
+                    bibirabiahaidari@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>&#128222;Phone:</strong>
+                <a href="tel:+923001234567">+923192679130</a>
+            </p>
+
+            <address>
+                <strong>&#128205;Location:</strong>
+                Quetta, Balochistan, Pakistan
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rabia. All Rights Reserved♥️.</p>
+    </footer>
+
+</body>
+</html>
