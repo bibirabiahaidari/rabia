@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rabiya,s Form</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(48, 178, 221);
+        }
+
+        form {
+            background-color: rgb(242, 178, 178);
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: purple;
+        }
+
+        input, select {
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 20px;
+        }
+
+        .text-box {
+            width: 80%;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="submit" method="post">
+        <h2>Bibi Raby Form</h2>
+        <hr>
+
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" name="name" id="name" placeholder="Type your full name "  class="text-box" required>
+              <br><br>
+
+        <label for="f/name">Father Name:</label>
+        <br>
+        <input type="text" name="f/name" id="f/name"  placeholder="Enter father name" class="text-box" required>
+        <br><br>
+
+        <label for="age">Age:</label> 
+        <br>
+        <input type="number" name="age" id="age" max="100" min="10" placeholder="Enter your age" class="text-box" required>
+        <br><br>
+        <label for="tel">Phone No:</label>
+        <input type="tel" name="phone" id="phone" placeholder="+923*********" class="text-box" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" name="dob" id="dob" required >
+        <br><br>
+        
+        <label for="country">Country:</label><br>
+        <select>
+            <option value="">Select Country</option>
+            <option value="pk">Pakistan</option>
+            <option value="ind">India</option>
+            <option value="chn">China</option>
+            <option value="eng">England</option>
+            <option value="aus">Australia</option>
+        </select> 
+        <br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" id="Femlae" value="female"> Female
+        <input type="radio" name="gender" id="male" value="male"> Male
+        <br><br>
+
+        <label for="hobbies">Hobbies:</label><br>
+        <input type="checkbox" name="hobbies" id="reading" value="reading"> Reading
+        <br>
+        <input type="checkbox" name="hobbies" id="cricket" value="cricket"> Cricket
+        <br>
+        <input type="checkbox" name="hobies" id="gaming" value="gaming"> Gaming
+        <br><br>
+
+        <input type="checkbox">
+        I agree to the terms
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
